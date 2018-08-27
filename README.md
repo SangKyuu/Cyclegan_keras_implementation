@@ -7,12 +7,12 @@ This implementation in Keras is based on [CycleGAN and pix2pix in PyTorch](https
 
 
 ## Prerequisites
--Windows or Linux or macOS
--Python 3
--GPU + CUDA CuDNN
+- Windows or Linux or macOS
+- Python 3
+- GPU + CUDA CuDNN
 
 ## Installation
--install Keras
-'''pip install keras'''
--install python libraries [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)
-'''pip install visdom dominate'''
+- install Keras
+''' pip install keras '''
+- install python libraries [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)
+''' pip install visdom dominate '''
