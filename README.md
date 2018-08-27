@@ -13,6 +13,6 @@ This implementation in Keras is based on [CycleGAN and pix2pix in PyTorch](https
 
 ## Installation
 - install Keras
-''' pip install keras '''
+``` pip install keras ```
 - install python libraries [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)
-''' pip install visdom dominate '''
+``` pip install visdom dominate ```
