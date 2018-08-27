@@ -27,7 +27,7 @@ bash ./datasets/download_cyclegan_dataset.sh maps
 #!./scripts/train_cyclegan.sh
 python train.py --dataroot ./datasets/maps --name maps_cyclegan --model cycle_gan
 ```
--Test Model
+- Test Model
 ```
 #!./scripts/test_cyclegan.sh
 python test.py --dataroot ./datasets/maps --name maps_cyclegan --model cycle_gan
