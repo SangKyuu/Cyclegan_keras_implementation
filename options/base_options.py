@@ -1,7 +1,7 @@
 import argparse
 import os
 from util import util
-import torch
+#import torch
 import models
 import data
 
@@ -104,8 +104,8 @@ class BaseOptions():
             opt.name = opt.name + suffix
 
         self.print_options(opt)
-
-        # set gpu ids
+        '''
+    # set gpu ids
         str_ids = opt.gpu_ids.split(',')
         opt.gpu_ids = []
         for str_id in str_ids:
@@ -114,6 +114,8 @@ class BaseOptions():
                 opt.gpu_ids.append(id)
         if len(opt.gpu_ids) > 0:
             torch.cuda.set_device(opt.gpu_ids[0])
+        '''
+
 
         self.opt = opt
         return self.opt

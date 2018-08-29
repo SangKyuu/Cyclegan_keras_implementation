@@ -19,7 +19,6 @@ def find_dataset_using_name(dataset_name):
         if name.lower() == target_dataset_name.lower() \
            and issubclass(cls, BaseDataset):
             dataset = cls
-            
     if dataset is None:
         print("In %s.py, there should be a subclass of BaseDataset with class name that matches %s in lowercase." % (dataset_filename, target_dataset_name))
         exit(0)
@@ -72,3 +71,4 @@ class CustomDatasetDataLoader(BaseDataLoader):
             if i * self.opt.batchSize >= self.opt.max_dataset_size:
                 break
             yield data
+

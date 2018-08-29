@@ -1,5 +1,5 @@
 from __future__ import print_function
-import torch
+from keras import backend as k
 import numpy as np
 from PIL import Image
 import os
@@ -8,7 +8,7 @@ import os
 # Converts a Tensor into an image array (numpy)
 # |imtype|: the desired type of the converted numpy array
 def tensor2im(input_image, imtype=np.uint8):
-    if isinstance(input_image, torch.Tensor):
+    if isinstance(input_image, k.tensor):
         image_tensor = input_image.data
     else:
         return input_image
@@ -24,7 +24,7 @@ def diagnose_network(net, name='network'):
     count = 0
     for param in net.parameters():
         if param.grad is not None:
-            mean += torch.mean(torch.abs(param.grad.data))
+            mean += k.mean(k.abs(param.grad.data))
             count += 1
     if count > 0:
         mean = mean / count
@@ -58,3 +58,4 @@ def mkdirs(paths):
 def mkdir(path):
     if not os.path.exists(path):
         os.makedirs(path)
+
