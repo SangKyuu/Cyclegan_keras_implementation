@@ -11,15 +11,6 @@ This implementation in Keras is based on [CycleGAN and pix2pix in PyTorch](https
  ```
 pip install keras
 ```
-- install matplotlib
-```
-pip install matplotlib
-```
-- install spicy
-```
-pip install spicy
-```
-
  ## CycleGAN train/test
 - Download Datasets
 ```
